@@ -12,18 +12,27 @@ body {
 
 .header {
   text-align: center;
+  padding: 20px 10px;
 }
 
-.main-content {
-  margin-top: 50px;
+.main-content,
+.container {
+  margin: 40px 0px;
   border: 1px solid black;
   border-radius: 8px;
-  width: 80%;
-  height: 80vh;
+  width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+}
+
+.main-content {
+  height: 100%;
+}
+
+.container {
+  height: 80vh;
 }
 
 .button {
@@ -40,12 +49,13 @@ body {
 }
 
 .form {
-  width: 60%;
+  width: 85%;
   display: flex;
+  padding: 20px 0px;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 50%;
+  height: 50vh;
 }
 
 .input {
@@ -64,8 +74,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 15px;
-  /* justify-content: space-between; */
+  margin: 10px;
 }
 
 .image {
@@ -86,9 +95,28 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .nft-supply-qty {
-  margin-top: 5px;
+  margin-top: 10px;
+}
+
+.btn-container {
+  margin: 10px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* If screen size is more than 600px wide */
+@media screen and (min-width: 600px) {
+  .main-content {
+    height: 80vh;
+  }
+
+  .main-content {
+    height: 100%;
+  }
 }

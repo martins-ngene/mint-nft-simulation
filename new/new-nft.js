@@ -1,20 +1,18 @@
+// Get elements from the document using unique ids
 let imageUrl = document.getElementById("image");
 let brandName = document.getElementById("brandName");
 let poloSize = document.getElementById("size");
 const inputs = document.querySelectorAll("#image, #brandName, #size");
 let addNewNFT = document.getElementById("addNFT");
 
-addNewNFT.addEventListener("click", e =>
-  mintNFT(e, imageUrl, brandName, poloSize)
-);
+addNewNFT.addEventListener("click", () => mintNFT(image, brandName, poloSize));
 
-function mintNFT(e, image, brand, size) {
-  // Prevent the default action
-  // e.preventDefault();
-
+// Mint an NFT by calling function with arguments
+function mintNFT(image, brand, size) {
   // Get list of NFTs
   const listOfNFTs = JSON.parse(localStorage.getItem("nfts"));
 
+  // Variable to store new NFT
   let newNFT;
 
   // Check if the number of NFTs is at max
@@ -25,6 +23,12 @@ function mintNFT(e, image, brand, size) {
     addNewNFT.href = "/all/nfts.html";
     return null;
   }
+
+  // Exit program if fields are empty
+  if (image.value === "" || brand.value === "" || size.value === "") {
+    return null;
+  }
+
   // Mint New NFT
   newNFT = {
     image: image.value,
@@ -34,13 +38,12 @@ function mintNFT(e, image, brand, size) {
 
   listOfNFTs.push(newNFT);
 
+  // Reset inputs
   inputs.forEach(input => {
     input.value = "";
   });
 
-  // console.log(listOfNFTs);
-
+  // Update NFTs store variable
   localStorage.setItem("nfts", JSON.stringify(listOfNFTs));
-  // console.log(listOfNFTs);
   addNewNFT.href = "/all/nfts.html";
 }
