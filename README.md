@@ -1,4 +1,4 @@
-![Applications Home Page](/public/banner.png)
+![Applications Home Page](/assets/banner.png)
 
 ## Visit Web Application
 
