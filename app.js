@@ -3,7 +3,6 @@ const mintButton = document.getElementById("mint");
 
 // Get the Minted NFTs array from localStorage
 // LocalStorage cannot hold arrays so we stringify them
-const listOfAllNFTs = JSON.parse(localStorage.getItem("nfts"));
 
 // Create a variable to store NFTs
 function storeNFTs() {

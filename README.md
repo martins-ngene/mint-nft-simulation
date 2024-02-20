@@ -6,7 +6,7 @@ This project is currently hosted on netlify and doesn't any extra steps to test 
 
 ## Video Demo
 
-I have created a short clip to show you what the application is like. Please see here on [YouTube](https://youtu.be/lDYFjSRiHaI)
+I have created a short clip to show you what the application is like. Please see here on [YouTube](https://youtu.be/5KHybBLw9D4)
 
 ## Application Design Choices
 
