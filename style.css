@@ -17,7 +17,7 @@ body {
 
 .main-content,
 .container {
-  margin: 40px 0px;
+  margin: 50px 0px;
   border: 1px solid black;
   border-radius: 8px;
   width: 90%;
@@ -29,15 +29,15 @@ body {
 
 .main-content {
   height: 100%;
+  position: relative;
 }
 
 .container {
   height: 80vh;
 }
 
-.button {
-  width: 120px;
-  height: 40px;
+.button,
+.back-button {
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -46,6 +46,19 @@ body {
   background-color: gold;
   border: 1px solid black;
   color: black;
+}
+
+.back-button {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  width: 60px;
+  height: 30px;
+}
+
+.button {
+  width: 120px;
+  height: 40px;
 }
 
 .form {
