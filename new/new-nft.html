@@ -9,24 +9,25 @@
   <body>
     <main class="main-content">
       <h1 class="header">Mint your NFTs Today!</h1>
-      <form class="form">
+      <div id="form" class="form">
         <input
           class="input"
-          name="picture"
+          id="image"
           placeholder="Select a picture"
           type="file" />
         <input
           class="input"
-          name="brand"
+          id="brandName"
           placeholder="Enter a brand name"
           type="text" />
         <input
           class="input"
-          name="size"
+          id="size"
           placeholder="Enter shirt size"
           type="text" />
-        <input class="button" type="submit" value="Mint NFT" />
-      </form>
+        <a id="addNFT" class="button">Mint NFT</a>
+      </div>
     </main>
+    <script src="./new-nft.js"></script>
   </body>
 </html>
